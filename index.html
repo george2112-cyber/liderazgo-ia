@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liderazgo con IA para Gerentes en Quito (8 semanas) | Andes Training</title>
+  <meta name="description" content="Programa ejecutivo de 8 semanas en Quito para gerentes y directivos. Aprende a liderar equipos, automatizar decisiones y multiplicar resultados con Inteligencia Artificial junto a Andes Training." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_EC" />
+  <meta property="og:site_name" content="Andes Training" />
+  <meta property="og:title" content="Liderazgo con IA para Gerentes | Andes Training — Quito (8 semanas)" />
+  <meta property="og:description" content="Transforma la productividad de tu gerencia en 8 semanas sin necesidad de perfil técnico. Metodología práctica para líderes empresariales en Quito." />
+
+  <!-- Favicon con emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>" />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --red: #ED1C24;
+      --red-dark: #C8141B;
+      --red-soft: rgba(237, 28, 36, 0.08);
+      --gray-dark: #333333;
+      --gray-mid: #555555;
+      --gray-muted: #6E6E6E;
+      --gray-border: #E4E4E7;
+      --bg-light: #F7F7F8;
+      --white: #FFFFFF;
+      --success: #15803D;
+      --success-bg: #F0FDF4;
+      --shadow-sm: 0 2px 10px rgba(51, 51, 51, 0.06);
+      --shadow-md: 0 12px 32px rgba(51, 51, 51, 0.10);
+      --radius: 14px;
+      --max-width: 1140px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--gray-dark);
+      background-color: var(--white);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--gray-border);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.125rem;
+      letter-spacing: -0.02em;
+      color: var(--gray-dark);
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: var(--red);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--gray-mid);
+    }
+
+    .nav-links a:hover {
+      color: var(--red);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 14px 28px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--red);
+      color: var(--white);
+      box-shadow: 0 8px 20px rgba(237, 28, 36, 0.25);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--red-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(237, 28, 36, 0.32);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .btn-sm {
+      padding: 10px 18px;
+      font-size: 0.9rem;
+    }
+
+    .btn-block {
+      width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 88px;
+      background-color: #222222;
+      background-image:
+        linear-gradient(125deg, rgba(24, 24, 27, 0.90) 0%, rgba(51, 51, 51, 0.78) 55%, rgba(24, 24, 27, 0.88) 100%),
+        url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1800&q=80');
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(237, 28, 36, 0.22);
+      border: 1px solid rgba(237, 28, 36, 0.55);
+      color: var(--white);
+      font-size: 0.84rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 4.8vw, 3.65rem);
+      line-height: 1.12;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--white);
+      text-decoration: underline;
+      text-decoration-color: var(--red);
+      text-decoration-thickness: 5px;
+      text-underline-offset: 8px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #E4E4E7;
+      margin-bottom: 28px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #E4E4E7;
+    }
+
+    .hero-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    .hero-meta-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--red);
+    }
+
+    .hero-card {
+      background: rgba(34, 34, 34, 0.92);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: var(--white);
+      border-radius: 18px;
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: var(--red);
+    }
+
+    .hero-card-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #D4D4D8;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .hero-card h2 {
+      font-size: 1.35rem;
+      line-height: 1.35;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .stat-value {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+    }
+
+    .stat-value span {
+      color: var(--red);
+    }
+
+    .stat-label {
+      font-size: 0.82rem;
+      color: #D4D4D8;
+      margin-top: 4px;
+    }
+
+    /* Section base */
+    section {
+      padding: 72px 0;
+    }
+
+    .section-alt {
+      background-color: var(--bg-light);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 44px;
+    }
+
+    .section-eyebrow {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--gray-dark);
+      margin-bottom: 12px;
+    }
+
+    .section-desc {
+      color: var(--gray-mid);
+      font-size: 1rem;
+    }
+
+    /* Propuesta de valor */
+    .value-box {
+      background: var(--white);
+      border: 1px solid var(--gray-border);
+      border-left: 6px solid var(--red);
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .value-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .value-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.96rem;
+      color: var(--gray-dark);
+    }
+
+    .value-check {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--red-soft);
+      color: var(--red);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-top: 2px;
+    }
+
+    /* Beneficios */
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .benefit-card {
+      background: var(--white);
+      border: 1px solid var(--gray-border);
+      border-radius: var(--radius);
+      padding: 26px 22px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--red-soft);
+      color: var(--red);
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+    }
+
+    .benefit-card h3 {
+      font-size: 1.06rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--gray-dark);
+    }
+
+    .benefit-card p {
+      font-size: 0.92rem;
+      color: var(--gray-mid);
+    }
+
+    /* Malla 4 módulos */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .module-card {
+      background: var(--white);
+      border: 1px solid var(--gray-border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .module-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--white);
+      background: var(--gray-dark);
+      padding: 4px 12px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .module-tag span {
+      color: var(--red);
+    }
+
+    .module-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--gray-dark);
+    }
+
+    .module-card p {
+      font-size: 0.94rem;
+      color: var(--gray-mid);
+      margin-bottom: 14px;
+    }
+
+    .module-topics {
+      list-style: none;
+      display: grid;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--gray-mid);
+    }
+
+    .module-topics li::before {
+      content: '•';
+      color: var(--red);
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    /* Testimonios */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--gray-border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .quote-mark {
+      font-size: 2rem;
+      line-height: 1;
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .testimonial-text {
+      font-size: 0.95rem;
+      color: var(--gray-dark);
+    }
+
+    .testimonial-author {
+      border-top: 1px solid var(--gray-border);
+      padding-top: 14px;
+    }
+
+    .author-name {
+      font-weight: 700;
+      font-size: 0.96rem;
+      color: var(--gray-dark);
+    }
+
+    .author-role {
+      font-size: 0.84rem;
+      color: var(--gray-muted);
+    }
+
+    /* FAQ */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--gray-border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      text-align: left;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gray-dark);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+    }
+
+    .faq-question:hover {
+      color: var(--red);
+    }
+
+    .faq-icon {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--red);
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item[data-open="true"] .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 24px 20px;
+      font-size: 0.94rem;
+      color: var(--gray-mid);
+    }
+
+    .faq-item[data-open="true"] .faq-answer {
+      display: block;
+    }
+
+    /* Formulario */
+    .form-section {
+      background: var(--gray-dark);
+      color: var(--white);
+    }
+
+    .form-wrapper {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .form-copy h2 {
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      line-height: 1.22;
+      margin-bottom: 14px;
+    }
+
+    .form-copy p {
+      color: #D4D4D8;
+      margin-bottom: 24px;
+    }
+
+    .form-highlights {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: #F4F4F5;
+    }
+
+    .form-highlights li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-highlights li::before {
+      content: '✓';
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .lead-card {
+      background: var(--white);
+      color: var(--gray-dark);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .lead-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .lead-card-sub {
+      font-size: 0.88rem;
+      color: var(--gray-muted);
+      margin-bottom: 16px;
+    }
+
+    .countdown-box {
+      background: var(--bg-light);
+      border: 1px solid var(--gray-border);
+      border-top: 3px solid var(--red);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+    }
+
+    .countdown-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray-dark);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .countdown-title span {
+      color: var(--red);
+    }
+
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .countdown-unit {
+      background: var(--gray-dark);
+      color: var(--white);
+      border-radius: 8px;
+      padding: 8px 4px;
+      text-align: center;
+    }
+
+    .countdown-num {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 800;
+      line-height: 1.1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .countdown-label {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: #D4D4D8;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 2px;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gray-dark);
+      margin-bottom: 6px;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 12px 14px;
+      border: 1.5px solid var(--gray-border);
+      border-radius: 9px;
+      color: var(--gray-dark);
+      background: var(--white);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .field input:focus,
+    .field select:focus {
+      outline: none;
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(237, 28, 36, 0.12);
+    }
+
+    .field-error {
+      display: none;
+      font-size: 0.78rem;
+      color: var(--red);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    .field.has-error input,
+    .field.has-error select {
+      border-color: var(--red);
+    }
+
+    .field.has-error .field-error {
+      display: block;
+    }
+
+    .consent-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.82rem;
+      color: var(--gray-mid);
+    }
+
+    .consent-row input {
+      margin-top: 3px;
+      accent-color: var(--red);
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .form-status {
+      display: none;
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .form-status.is-success {
+      display: block;
+      background: var(--success-bg);
+      color: var(--success);
+      border: 1px solid #BBF7D0;
+    }
+
+    .form-status.is-error {
+      display: block;
+      background: #FEF2F2;
+      color: var(--red-dark);
+      border: 1px solid #FECACA;
+    }
+
+    /* Franja de empresas clientes */
+    .clients-strip {
+      background: var(--bg-light);
+      border-bottom: 1px solid var(--gray-border);
+      padding: 28px 0;
+    }
+
+    .clients-label {
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #8A8A93;
+      margin-bottom: 18px;
+    }
+
+    .clients-logos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 24px 40px;
+    }
+
+    .client-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: #7D7D86;
+      opacity: 0.85;
+      transition: opacity 0.2s ease, color 0.2s ease;
+      user-select: none;
+    }
+
+    .client-logo:hover {
+      opacity: 1;
+      color: #55555C;
+    }
+
+    .client-logo svg {
+      flex-shrink: 0;
+    }
+
+    .client-logo span {
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    /* Menú hamburguesa y CTA fijo móvil (ocultos en escritorio) */
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border: 1.5px solid var(--gray-border);
+      border-radius: 9px;
+      background: var(--white);
+      color: var(--gray-dark);
+      cursor: pointer;
+      padding: 0;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .menu-toggle:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .mobile-nav {
+      display: none;
+      background: var(--white);
+      border-top: 1px solid var(--gray-border);
+      padding: 12px 20px 18px;
+    }
+
+    .mobile-nav.is-open {
+      display: grid;
+      gap: 4px;
+    }
+
+    .mobile-nav a {
+      padding: 11px 12px;
+      border-radius: 8px;
+      font-size: 0.96rem;
+      font-weight: 500;
+      color: var(--gray-dark);
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .mobile-nav a:hover {
+      background: var(--bg-light);
+      color: var(--red);
+    }
+
+    .mobile-sticky-cta {
+      display: none;
+    }
+
+    /* Botón flotante de WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 65;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: #25D366;
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 22px rgba(37, 211, 102, 0.36);
+      transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1EBE5D;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(37, 211, 102, 0.44);
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #222222;
+      color: #D4D4D8;
+      padding: 28px 0;
+      font-size: 0.88rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .hero-grid,
+      .value-box,
+      .form-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header-inner {
+        height: auto;
+        min-height: 64px;
+        padding: 10px 0;
+        gap: 10px;
+      }
+
+      .brand {
+        font-size: 0.98rem;
+        white-space: nowrap;
+      }
+
+      .nav-links,
+      .header-inner .btn-sm,
+      .hero-actions {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .mobile-sticky-cta {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 60;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(8px);
+        border-top: 1px solid var(--gray-border);
+        box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .site-footer {
+        padding-bottom: 88px;
+      }
+
+      .whatsapp-float {
+        right: 16px;
+        bottom: 92px;
+        width: 52px;
+        height: 52px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      section {
+        padding: 52px 0;
+      }
+
+      .hero {
+        padding: 40px 0 52px;
+      }
+
+      .grid-4,
+      .grid-2,
+      .form-row-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .value-box,
+      .lead-card,
+      .hero-card {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Andes Training Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="8" fill="#ED1C24"/>
+          <path d="M5.5 26L14 13L19 20L23 15L30.5 26H5.5Z"
+                fill="none" stroke="#FFFFFF" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 13L19 20L23 15"
+                stroke="#FFFFFF" stroke-width="1.4"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="14" cy="13" r="2.5" fill="#FFFFFF"/>
+          <circle cx="19" cy="20" r="2.5" fill="#FFFFFF"/>
+          <circle cx="23" cy="15" r="2.5" fill="#FFFFFF"/>
+          <circle cx="30.5" cy="26" r="1.8" fill="#FFFFFF"/>
+          <circle cx="5.5" cy="26" r="1.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Andes Training</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#propuesta">Propuesta</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#malla">Malla</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+      <a href="#form-lead" class="btn btn-primary btn-sm">Quiero información</a>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+        <svg id="menu-icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+        <svg id="menu-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" style="display: none;">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Menú móvil">
+      <a href="#propuesta">Propuesta de valor</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#malla">Malla en 4 módulos</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#form-lead" style="color: var(--red); font-weight: 700;">Quiero información</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero: Titular con resultado -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Programa Ejecutivo • Quito • 8 Semanas</span>
+          <h1>Multiplica la productividad de tu gerencia aplicando <span>Inteligencia Artificial</span> en 8 semanas</h1>
+          <p class="hero-subtitle">
+            <strong>Liderazgo con IA</strong> de <strong>Andes Training</strong> prepara a gerentes y directivos en Quito para tomar decisiones más rápidas, automatizar procesos clave y liderar equipos de alto desempeño sin necesidad de saber programar.
+          </p>
+          <div class="hero-actions">
+            <a href="#form-lead" class="btn btn-primary">Quiero información</a>
+          </div>
+          <div class="hero-meta">
+            <span class="hero-meta-item"><span class="hero-meta-dot"></span> Formato ejecutivo (8 semanas)</span>
+            <span class="hero-meta-item"><span class="hero-meta-dot"></span> Casos reales de negocio</span>
+            <span class="hero-meta-item"><span class="hero-meta-dot"></span> Sede Quito + acompañamiento</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumen del programa">
+          <div class="hero-card-label">Liderazgo con IA • Andes Training</div>
+          <h2>De la curiosidad tecnológica a resultados medibles en tu empresa</h2>
+          <p style="color: #D4D4D8; font-size: 0.94rem; margin-bottom: 20px;">
+            Diseñado para gerentes generales, directores de área y líderes que necesitan implementar IA con criterio estratégico y retorno claro.
+          </p>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-value">8 <span>sem</span></div>
+              <div class="stat-label">Duración intensiva</div>
+            </div>
+            <div>
+              <div class="stat-value">4 <span>mód</span></div>
+              <div class="stat-label">Malla 100% aplicable</div>
+            </div>
+            <div>
+              <div class="stat-value">Quito</div>
+              <div class="stat-label">Networking gerencial</div>
+            </div>
+            <div>
+              <div class="stat-value">0 <span>código</span></div>
+              <div class="stat-label">Enfoque estratégico</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Franja de empresas clientes -->
+    <section class="clients-strip" aria-label="Empresas participantes en Ecuador">
+      <div class="container">
+        <p class="clients-label">Líderes de empresas ecuatorianas que confían en nuestra metodología</p>
+        <div class="clients-logos">
+          <div class="client-logo" aria-label="Corporación Andina">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 20h18" />
+              <path d="M5 20L10 8l4 6 3-4 2 10" />
+            </svg>
+            <span>Corporación Andina</span>
+          </div>
+
+          <div class="client-logo" aria-label="Banco del Pacífico Norte">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 10h18" />
+              <path d="M5 10v8M9 10v8M15 10v8M19 10v8" />
+              <path d="M2 20h20M12 3l9 7H3l9-7z" />
+            </svg>
+            <span>Banco del Pacífico Norte</span>
+          </div>
+
+          <div class="client-logo" aria-label="Grupo Industrial Quito">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="10" width="7" height="10" rx="1" />
+              <rect x="14" y="5" width="7" height="15" rx="1" />
+              <path d="M6.5 14h0M17.5 9h0M17.5 13h0" />
+            </svg>
+            <span>Grupo Industrial Quito</span>
+          </div>
+
+          <div class="client-logo" aria-label="TechAndes">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
+              <circle cx="12" cy="12" r="2.5" />
+            </svg>
+            <span>TechAndes</span>
+          </div>
+
+          <div class="client-logo" aria-label="Energía Sur">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M13 7l-4 5h4l-1 5 4-5h-4l1-5z" />
+            </svg>
+            <span>Energía Sur</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Propuesta de valor -->
+    <section id="propuesta">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Propuesta de valor</div>
+          <h2 class="section-title">No necesitas ser técnico para liderar la transformación con IA en tu empresa</h2>
+          <p class="section-desc">
+            Muchas empresas compran licencias de IA sin ver retorno. Este programa cierra la brecha entre la herramienta y la estrategia comercial u operativa.
+          </p>
+        </div>
+
+        <div class="value-box">
+          <div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Qué cambia en tu gestión desde la primera semana</h3>
+            <p style="color: var(--gray-mid); font-size: 0.96rem;">
+              En Andes Training trabajamos con tus propios retos de negocio: reportes lentos, seguimiento comercial manual, análisis de datos dispersos y cuellos de botella en tu equipo. Sales con un plan de implementación listo para ejecutar.
+            </p>
+          </div>
+          <ul class="value-list">
+            <li><span class="value-check">✓</span> Criterio directivo para elegir dónde sí invertir en IA y dónde no.</li>
+            <li><span class="value-check">✓</span> Flujos prácticos para automatizar reportes, propuestas y seguimiento.</li>
+            <li><span class="value-check">✓</span> Gobernanza y uso seguro de datos corporativos.</li>
+            <li><span class="value-check">✓</span> Proyecto final aplicado directamente a tu gerencia.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Beneficios con íconos SVG -->
+    <section id="beneficios" class="section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Beneficios clave</div>
+          <h2 class="section-title">Diseñado para la agenda real de un gerente</h2>
+        </div>
+
+        <div class="grid-4">
+          <article class="benefit-card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3>Decisiones más rápidas</h3>
+            <p>Resume informes financieros, comerciales y operativos en minutos con prompts y flujos diseñados para dirección.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <h3>Casos reales en Quito</h3>
+            <p>Aplica lo aprendido en empresas locales de servicios, comercio, industria y banca junto a pares de tu mismo nivel.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Control y seguridad</h3>
+            <p>Define políticas claras para proteger información confidencial de clientes y evitar errores comunes al usar IA.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Adopción en tu equipo</h3>
+            <p>Aprende a vencer la resistencia al cambio y capacitar a tus colaboradores para que usen IA todos los días.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Malla en 4 módulos -->
+    <section id="malla">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Malla curricular • 8 semanas</div>
+          <h2 class="section-title">4 módulos prácticos paso a paso</h2>
+          <p class="section-desc">Cada módulo dura dos semanas e incluye sesiones ejecutivas, plantillas listas para usar y mentoría aplicada.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="module-card">
+            <span class="module-tag">Módulo <span>01</span> • Semanas 1–2</span>
+            <h3>Estrategia Gerencial e IA sin tecnicismos</h3>
+            <p>Comprende qué puede hacer hoy la Inteligencia Artificial por tu modelo de negocio y cómo priorizar oportunidades de alto impacto.</p>
+            <ul class="module-topics">
+              <li>Mapa de oportunidades de IA por área (ventas, operaciones, talento)</li>
+              <li>Cálculo práctico de retorno de inversión (ROI)</li>
+              <li>Copilotos ejecutivos para productividad diaria</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <span class="module-tag">Módulo <span>02</span> • Semanas 3–4</span>
+            <h3>Automatización Comercial y Atención al Cliente</h3>
+            <p>Elimina fugas de prospectos y demoras en respuestas conectando formularios, hojas de cálculo y correos automáticos.</p>
+            <ul class="module-topics">
+              <li>Captación y respuesta inmediata a leads en menos de 60 segundos</li>
+              <li>Seguimiento comercial automatizado y segmentación</li>
+              <li>Tableros simples para gerencia sin consolidación manual</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <span class="module-tag">Módulo <span>03</span> • Semanas 5–6</span>
+            <h3>Análisis de Datos y Toma de Decisiones</h3>
+            <p>Convierte reportes extensos, encuestas y bases de clientes en conclusiones claras para reuniones de directorio.</p>
+            <ul class="module-topics">
+              <li>Lectura asistida de indicadores financieros y comerciales</li>
+              <li>Detección de patrones de recompra y riesgo de fuga</li>
+              <li>Generación de presentaciones y resúmenes ejecutivos</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <span class="module-tag">Módulo <span>04</span> • Semanas 7–8</span>
+            <h3>Gobernanza, Equipos y Proyecto Aplicado</h3>
+            <p>Consolida la adopción en tu empresa con reglas claras de privacidad, liderazgo humano y un plan piloto validado.</p>
+            <ul class="module-topics">
+              <li>Políticas internas de uso responsable y privacidad de datos</li>
+              <li>Plan de gestión del cambio para tus equipos en Quito</li>
+              <li>Presentación final del proyecto aplicado a tu empresa</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 Testimonios -->
+    <section id="testimonios" class="section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Experiencias reales</div>
+          <h2 class="section-title">Lo que dicen gerentes que ya aplican esta metodología</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="testimonial-card">
+            <div>
+              <div class="quote-mark">“</div>
+              <p class="testimonial-text">
+                Antes tardábamos dos días en consolidar reportes comerciales los lunes. Hoy nuestro equipo genera el resumen en 20 minutos y responde a cada interesado al instante.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Carolina Cevallos</div>
+              <div class="author-role">Gerente Comercial • Sector Servicios, Quito</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="quote-mark">“</div>
+              <p class="testimonial-text">
+                Lo que más valoré fue el lenguaje claro. No nos llenaron de teoría técnica; salí con tres flujos funcionando en mi área de operaciones desde la semana cuatro.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Diego Villacís</div>
+              <div class="author-role">Gerente de Operaciones • Industria Alimenticia, Quito</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="quote-mark">“</div>
+              <p class="testimonial-text">
+                Logramos alinear a toda la gerencia con políticas claras de seguridad y herramientas prácticas. La inversión se pagó sola en el primer mes de ahorro de horas.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Mónica Andrade</div>
+              <div class="author-role">Directora General • Consultora Empresarial, Quito</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Preguntas frecuentes</div>
+          <h2 class="section-title">Resolvemos tus dudas antes de inscribirte</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item" data-open="true">
+            <button type="button" class="faq-question" aria-expanded="true">
+              <span>¿Necesito conocimientos previos de programación o tecnología?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              No. El programa está diseñado 100% para gerentes, directores y líderes de área. Todo se enseña con herramientas accesibles y lenguaje de negocio.
+            </div>
+          </div>
+
+          <div class="faq-item" data-open="false">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Cuál es la duración y modalidad en Quito?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Tiene una duración de 8 semanas en formato ejecutivo compatible con tu jornada laboral en Quito, combinando sesiones guiadas y aplicación directa en tu empresa.
+            </div>
+          </div>
+
+          <div class="faq-item" data-open="false">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Puedo inscribir a varios gerentes de una misma empresa?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Sí. Contamos con planes corporativos para equipos directivos que deseen alinear su transformación con IA bajo un mismo proyecto empresarial.
+            </div>
+          </div>
+
+          <div class="faq-item" data-open="false">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Qué pasa después de enviar el formulario?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Recibirás de inmediato la información del programa, próximas fechas de inicio en Quito, inversión y opciones de pago para resolver cualquier inquietud con nuestro equipo comercial.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de captación -->
+    <section class="form-section" id="contacto">
+      <div class="container form-wrapper">
+        <div class="form-copy">
+          <div class="section-eyebrow" style="color: #FF6B70;">Admisiones abiertas • Quito</div>
+          <h2>Da el siguiente paso y lidera tu empresa con Inteligencia Artificial</h2>
+          <p>
+            Déjanos tus datos y recibe hoy mismo el programa detallado de <strong>Liderazgo con IA (8 semanas)</strong>, horarios en Quito e inversión.
+          </p>
+          <ul class="form-highlights">
+            <li>Respuesta inmediata con el brochure del programa</li>
+            <li>Asesoría personalizada para tu perfil gerencial</li>
+            <li>Cupos limitados por cohorte ejecutiva</li>
+          </ul>
+        </div>
+
+        <div class="lead-card">
+          <h3>Solicita información del programa</h3>
+          <p class="lead-card-sub">Completa el formulario en menos de 1 minuto.</p>
+
+          <div class="countdown-box" aria-label="Cuenta regresiva al cierre de inscripciones">
+            <div class="countdown-title">
+              <span>Cierre de inscripciones</span>
+              <strong>30 de noviembre</strong>
+            </div>
+            <div class="countdown-grid">
+              <div class="countdown-unit">
+                <span class="countdown-num" id="cd-days">00</span>
+                <span class="countdown-label">Días</span>
+              </div>
+              <div class="countdown-unit">
+                <span class="countdown-num" id="cd-hours">00</span>
+                <span class="countdown-label">Horas</span>
+              </div>
+              <div class="countdown-unit">
+                <span class="countdown-num" id="cd-mins">00</span>
+                <span class="countdown-label">Min</span>
+              </div>
+              <div class="countdown-unit">
+                <span class="countdown-num" id="cd-secs">00</span>
+                <span class="countdown-label">Seg</span>
+              </div>
+            </div>
+          </div>
+
+          <form id="form-lead" novalidate>
+            <input type="hidden" id="canal" name="canal" value="Landing Web" />
+
+            <div class="form-grid">
+              <div class="field" data-field="nombre">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Pérez" autocomplete="name" required />
+                <span class="field-error">Ingresa tu nombre completo.</span>
+              </div>
+
+              <div class="field" data-field="correo">
+                <label for="correo">Correo electrónico *</label>
+                <input type="email" id="correo" name="correo" placeholder="ana@empresa.com" autocomplete="email" required />
+                <span class="field-error">Ingresa un correo electrónico válido.</span>
+              </div>
+
+              <div class="form-row-2">
+                <div class="field" data-field="empresa">
+                  <label for="empresa">Empresa *</label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" autocomplete="organization" required />
+                  <span class="field-error">Ingresa el nombre de tu empresa.</span>
+                </div>
+
+                <div class="field" data-field="cargo">
+                  <label for="cargo">Cargo *</label>
+                  <input type="text" id="cargo" name="cargo" placeholder="Ej. Gerente General" autocomplete="organization-title" required />
+                  <span class="field-error">Ingresa tu cargo actual.</span>
+                </div>
+              </div>
+
+              <div class="field" data-field="programa">
+                <label for="programa">Programa de interés *</label>
+                <select id="programa" name="programa" required>
+                  <option value="Liderazgo con IA" selected>Liderazgo con IA (Gerentes • Quito • 8 semanas)</option>
+                  <option value="Liderazgo con IA - In Company">Liderazgo con IA (Corporativo In-Company)</option>
+                </select>
+                <span class="field-error">Selecciona un programa.</span>
+              </div>
+
+              <div class="field" data-field="consentimiento">
+                <label class="consent-row" for="consentimiento">
+                  <input type="checkbox" id="consentimiento" name="consentimiento" required />
+                  <span>Acepto que Andes Training me envíe información del programa y comunicaciones comerciales relacionadas.</span>
+                </label>
+                <span class="field-error">Debes aceptar el consentimiento para continuar.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btn-submit">
+                Quiero información
+              </button>
+            </div>
+
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Andes Training</strong> • Programa Ejecutivo Liderazgo con IA — Quito, Ecuador</div>
+      <div>© <span id="year"></span> Andes Training. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky-cta">
+    <a href="#form-lead" class="btn btn-primary btn-block" id="mobile-sticky-btn">Quiero información</a>
+  </div>
+
+  <a
+    href="https://wa.me/?text=Hola%20Andes%20Training%2C%20vengo%20de%20la%20web%20y%20quiero%20informaci%C3%B3n%20del%20programa%20Liderazgo%20con%20IA"
+    class="whatsapp-float"
+    id="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Consultar por WhatsApp"
+    title="Consultar por WhatsApp"
+  >
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .15 5.34.15 11.91c0 2.1.55 4.15 1.59 5.96L0 24l6.3-1.65a11.86 11.86 0 0 0 5.76 1.47h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.17-3.46-8.43zm-8.46 18.33h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.88 9.88 0 0 1-1.51-5.27c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.83 9.83 0 0 1 2.9 7c0 5.45-4.44 9.89-9.9 9.89zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.51 0 1.48 1.08 2.91 1.23 3.11.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+    </svg>
+  </a>
+
+  <script>
+    (function () {
+      // Menú hamburguesa móvil (< 768px) y scroll suave al formulario
+      var menuToggle = document.getElementById('menu-toggle');
+      var mobileNav = document.getElementById('mobile-nav');
+      var iconOpen = document.getElementById('menu-icon-open');
+      var iconClose = document.getElementById('menu-icon-close');
+
+      function setMenuState(open) {
+        if (!menuToggle || !mobileNav) return;
+        menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        menuToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        if (open) {
+          mobileNav.classList.add('is-open');
+          if (iconOpen) iconOpen.style.display = 'none';
+          if (iconClose) iconClose.style.display = 'block';
+        } else {
+          mobileNav.classList.remove('is-open');
+          if (iconOpen) iconOpen.style.display = 'block';
+          if (iconClose) iconClose.style.display = 'none';
+        }
+      }
+
+      if (menuToggle && mobileNav) {
+        menuToggle.addEventListener('click', function () {
+          var isOpen = mobileNav.classList.contains('is-open');
+          setMenuState(!isOpen);
+        });
+
+        mobileNav.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            setMenuState(false);
+          });
+        });
+      }
+
+      var stickyBtn = document.getElementById('mobile-sticky-btn');
+      if (stickyBtn) {
+        stickyBtn.addEventListener('click', function (event) {
+          var targetForm = document.getElementById('form-lead');
+          if (targetForm) {
+            event.preventDefault();
+            targetForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      }
+      // Año actual en el pie de página
+      var yearEl = document.getElementById('year');
+      if (yearEl) {
+        yearEl.textContent = String(new Date().getFullYear());
+      }
+
+      // Detectar origen (?canal= o ?utm_source=) sin almacenar credenciales
+      var params = new URLSearchParams(window.location.search);
+      var canalParam = params.get('canal') || params.get('utm_source');
+      var canalInput = document.getElementById('canal');
+      if (canalInput && canalParam) {
+        canalInput.value = canalParam.trim();
+      }
+
+      // Acordeón de preguntas frecuentes
+      var faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(function (item) {
+        var btn = item.querySelector('.faq-question');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var isOpen = item.getAttribute('data-open') === 'true';
+          faqItems.forEach(function (other) {
+            other.setAttribute('data-open', 'false');
+            var otherBtn = other.querySelector('.faq-question');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item.setAttribute('data-open', 'true');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Validación y envío del formulario id="form-lead"
+      // Nota: para conectar con Google Apps Script, definir window.ANDES_ENDPOINT antes de publicar o reemplazar la URL pública del Web App.
+      var form = document.getElementById('form-lead');
+      var statusEl = document.getElementById('form-status');
+      var submitBtn = document.getElementById('btn-submit');
+      var lastSubmittedEmail = '';
+
+      function setFieldError(fieldName, hasError) {
+        var wrapper = form.querySelector('[data-field="' + fieldName + '"]');
+        if (!wrapper) return;
+        if (hasError) {
+          wrapper.classList.add('has-error');
+        } else {
+          wrapper.classList.remove('has-error');
+        }
+      }
+
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+      }
+
+      if (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          statusEl.className = 'form-status';
+          statusEl.textContent = '';
+
+          var nombre = form.nombre.value.trim();
+          var correo = form.correo.value.trim().toLowerCase();
+          var empresa = form.empresa.value.trim();
+          var cargo = form.cargo.value.trim();
+          var programa = form.programa.value.trim();
+          var canal = form.canal.value.trim();
+          var consentimiento = form.consentimiento.checked;
+
+          var errNombre = nombre.length < 2;
+          var errCorreo = !isValidEmail(correo);
+          var errEmpresa = empresa.length < 2;
+          var errCargo = cargo.length < 2;
+          var errPrograma = programa.length === 0;
+          var errConsent = !consentimiento;
+
+          setFieldError('nombre', errNombre);
+          setFieldError('correo', errCorreo);
+          setFieldError('empresa', errEmpresa);
+          setFieldError('cargo', errCargo);
+          setFieldError('programa', errPrograma);
+          setFieldError('consentimiento', errConsent);
+
+          if (errNombre || errCorreo || errEmpresa || errCargo || errPrograma || errConsent) {
+            statusEl.className = 'form-status is-error';
+            statusEl.textContent = 'Por favor revisa los campos marcados en rojo antes de enviar.';
+            return;
+          }
+
+          if (lastSubmittedEmail === correo) {
+            statusEl.className = 'form-status is-success';
+            statusEl.textContent = 'Ya recibimos tu solicitud con el correo ' + correo + '. Nuestro equipo comercial se comunicará contigo muy pronto.';
+            return;
+          }
+
+          var payload = {
+            nombre: nombre,
+            correo: correo,
+            empresa: empresa,
+            cargo: cargo,
+            programa: programa,
+            canal: canal,
+            consentimiento: 'Sí',
+            fecha_registro: new Date().toISOString()
+          };
+
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Enviando...';
+
+          var endpoint = window.ANDES_ENDPOINT || '';
+
+          if (endpoint) {
+            fetch(endpoint, {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            })
+              .then(function () {
+                lastSubmittedEmail = correo;
+                statusEl.className = 'form-status is-success';
+                statusEl.textContent = '¡Gracias, ' + nombre + '! Recibimos tu interés en ' + programa + '. En menos de 1 minuto recibirás información en ' + correo + '.';
+                form.reset();
+              })
+              .catch(function () {
+                statusEl.className = 'form-status is-error';
+                statusEl.textContent = 'Ocurrió un problema de conexión al enviar tus datos. Por favor intenta nuevamente.';
+              })
+              .finally(function () {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Quiero información';
+              });
+          } else {
+            lastSubmittedEmail = correo;
+            statusEl.className = 'form-status is-success';
+            statusEl.textContent = '¡Gracias, ' + nombre + '! Tus datos para ' + programa + ' han sido validados correctamente. Nuestro equipo comercial de Andes Training se contactará contigo.';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Quiero información';
+            form.reset();
+          }
+        });
+      }
+
+      // Cuenta regresiva en vivo al 30 de noviembre (hora Ecuador -05:00)
+      var cdDays = document.getElementById('cd-days');
+      var cdHours = document.getElementById('cd-hours');
+      var cdMins = document.getElementById('cd-mins');
+      var cdSecs = document.getElementById('cd-secs');
+      var deadline = new Date('2026-11-30T23:59:59-05:00').getTime();
+
+      function pad2(n) {
+        return n < 10 ? '0' + n : String(n);
+      }
+
+      function updateCountdown() {
+        if (!cdDays || !cdHours || !cdMins || !cdSecs) return;
+        var diff = Math.max(0, deadline - Date.now());
+        var totalSecs = Math.floor(diff / 1000);
+        var days = Math.floor(totalSecs / 86400);
+        var hours = Math.floor((totalSecs % 86400) / 3600);
+        var mins = Math.floor((totalSecs % 3600) / 60);
+        var secs = totalSecs % 60;
+
+        cdDays.textContent = pad2(days);
+        cdHours.textContent = pad2(hours);
+        cdMins.textContent = pad2(mins);
+        cdSecs.textContent = pad2(secs);
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    })();
+  </script>
+</body>
+</html>
